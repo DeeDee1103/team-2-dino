@@ -50,6 +50,20 @@ namespace DotNetExample.Tests.Steps
           GameController.GameStatus status = testObj.GetStatus();
           this.currentPosition = status.currentPosition = status.currentPosition;
         }
+
+        [Then(@"the character is now at position with XCoordinates(.*)")]
+        public void checkXCoordinates(int endX)
+        {
+          Assert.NotNull(this.currentPosition, "Expected position not null");
+          Assert.AreEqual(endX, this.currentPosition.X);
+        }
+
+        [Then(@"YCoordinates (.*)")]
+        public void checkYCoordinates(int endY)
+        {
+          Assert.NotNull(this.currentPosition, "Expected position not null");
+          Assert.AreEqual(endY, this.currentPosition.Y);
+        }
     }
 
   

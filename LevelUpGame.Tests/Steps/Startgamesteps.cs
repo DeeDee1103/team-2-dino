@@ -17,8 +17,8 @@ int startX, startY, endX, endY;
 
 GameController.DIRECTION direction;
 Point currentPosition;
-    }
-}
+    
+
 [Given(@"the character starts at position with XCoordinates(.*)")]
         public void givenTheCharacterStartsAtX(int startX)
         {
@@ -46,4 +46,5 @@ Point currentPosition;
           GameController.GameStatus status = testObj.GetStatus();
           this.currentPosition = status.currentPosition = status.currentPosition;
         }
+    }}
         

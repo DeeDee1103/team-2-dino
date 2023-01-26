@@ -3,8 +3,10 @@ using TechTalk.SpecFlow;
 using NUnit.Framework;
 using FluentAssertions;
 
-namespace 
+namespace DotNetExample.Tests.Steps
+{
 
+[Binding]
  public class MoveSteps
 {
     GameController testObj = new GameController();
@@ -20,3 +22,4 @@ public void givenTheCharacterStartsAtX(int startX)
 }
 
   
+}

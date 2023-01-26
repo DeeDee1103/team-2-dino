@@ -13,4 +13,6 @@ Feature: Move in a direction
    Then the character is not at position with XCoordinates <endingPositionX>
    And YCoordinates <endingPositionY>
  
- 
+   Examples:
+     | startingPositionX | starttingPositionY | direction | endingPositionX | endingPositionY |
+     | 2 | 2 | 

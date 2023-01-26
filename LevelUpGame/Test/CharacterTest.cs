@@ -1,4 +1,5 @@
 using levelup;
+using NUnit.Framework;
 
 
 namespace levelup.test{

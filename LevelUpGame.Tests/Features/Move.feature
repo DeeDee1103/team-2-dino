@@ -15,4 +15,4 @@ Feature: Move in a direction
  
    Examples:
      | startingPositionX | starttingPositionY | direction | endingPositionX | endingPositionY |
-     | 2 | 2 | 
+     | 2 | 2 | NORTH | 2 | 3 |

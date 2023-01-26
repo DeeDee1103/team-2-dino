@@ -1,8 +1,23 @@
+using levelup;
+
+
 namespace levelup.test{
     public class CharacterTest{
-            public void initCharacterTest(){}
 
-            
-        
+            private Character testCharacter;
+            public void initCharacterTest(){
+                testCharacter = new Character();
+
+            if (testCharacter == null)
+            {
+                
+            }
+
+
+         
+
+
+
+            }
     }
 }

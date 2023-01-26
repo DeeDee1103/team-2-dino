@@ -8,3 +8,6 @@ Public MoveSteps()
 [Given(@"the character starts at position with XCoordinates(.*)")]
 public void givenTheCharacterStartsAtX(int startX)
 {
+  this.startX=startX;
+  }
+  

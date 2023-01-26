@@ -5,3 +5,4 @@ Public MoveSteps()
 {
 }
 
+[Given(@"the character starts at position with XCoordinates <startingPositionX>]

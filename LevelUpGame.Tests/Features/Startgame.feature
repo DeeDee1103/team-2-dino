@@ -4,6 +4,7 @@ Feature: I want to start the game
 
 Scenario Outline: Start Game
     Given Character starts the game
+    Then the character is now at position XCoordinates,  YCoordinates
     
 
     

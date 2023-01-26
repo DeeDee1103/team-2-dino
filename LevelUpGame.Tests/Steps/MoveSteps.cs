@@ -3,6 +3,7 @@ using TechTalk.SpecFlow;
 using NUnit.Framework;
 using FluentAssertions;
 using levelup;
+using System.Drawing;
 
 namespace DotNetExample.Tests.Steps
 {
@@ -10,9 +11,17 @@ namespace DotNetExample.Tests.Steps
     public class MoveSteps
     {
         private GameController testObj = new GameController();
-        private int startX, startY, endX, endY;
+        private int startX;
+        private int startY;
+        private int endX;
+        private int endY;
         private GameController.DIRECTION direction;
         private Point currentPosition;
+
+        public MoveSteps(ScenarioContext scenarioContext)
+        { 
+             //   _scenarioContext = scenarioContext;
+        }
 
         [Given(@"the character starts at position with XCoordinates(.*)")]
         public void givenTheCharacterStartsAtX(int startX)

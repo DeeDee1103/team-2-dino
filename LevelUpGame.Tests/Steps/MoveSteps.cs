@@ -1,5 +1,9 @@
 using System;
+using TechTalk.SpecFlow;
+using NUnit.Framework;
+using FluentAssertions;
 
+namespace 
 
  public class MoveSteps
 {

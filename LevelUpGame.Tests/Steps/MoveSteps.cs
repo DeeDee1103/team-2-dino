@@ -33,5 +33,14 @@ namespace DotNetExample.Tests.Steps
     this.direction = (GameController.DIRECTION)
     Enum.Parse(typeof(GameController.DIRECTION), direction);
   }
-  
+ 
+ [When(@"the character moves")]
+ public void whenTheCharacterMoves()
+ {
+  testObj.SetCharacterPosition(new Point(this.startX, this.startY));
+  testObj.Move(this.direction);
+  GameController.GameStatus status=testObj.GetStatus();
+  this.currentPosition=status.currentPosition=status.currentPosition;
+ }
+
 }

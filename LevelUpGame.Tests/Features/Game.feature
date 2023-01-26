@@ -14,3 +14,5 @@ Scenario Outline: Set character name
         | characterNameInput | characterNameOutput |  
         | Erin            | Erin             |
         |                 | Character           |
+        | 1234            | 1234               |
+        | $am1234         | $am1234            |

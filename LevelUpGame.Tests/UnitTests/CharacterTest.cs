@@ -7,6 +7,7 @@ namespace levelup.test{
             private Character testCharacter;
 
           
+          
             public void initCharacterTest(){
                 testCharacter = new Character();
 

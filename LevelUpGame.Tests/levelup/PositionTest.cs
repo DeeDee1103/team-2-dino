@@ -18,7 +18,7 @@ namespace levelup{
         [Test]
         public void IsPositionInitialized()
         {
-            Assert.IsEqual(testPosition.coordinates, Point(1,1));
+            Assert.AreEqual(testPosition.coordinates, new Point(1,1));
         }
     }
     

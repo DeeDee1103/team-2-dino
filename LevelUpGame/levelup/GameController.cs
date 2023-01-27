@@ -75,7 +75,7 @@ namespace levelup
         }
 
 
-   public static void Draw()
+   public  string  Draw()
         {
             for (int y = SizeY -1; y >= 0; y--)
             {
@@ -87,7 +87,7 @@ namespace levelup
 
                 Console.Write('\n');
             }
-
+return string.Empty;
 
         }
 

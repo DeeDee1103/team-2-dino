@@ -27,5 +27,11 @@ namespace levelup
           Assert.AreEqual(GameController.DIRECTION.NORTH,GameController.DIRECTION.NORTH);
                   
        }
+
+       [Test]
+       public void startGame()
+       {
+        testObj = new GameController();
+        Assert.AreEqual(testObj.Draw(),string.Empty);       }
     }
 }

@@ -24,7 +24,7 @@ namespace levelup
         [Test]
         public void getMove()
         {
-          Assert.AreEqual("NORTH",GameController.DIRECTION.EAST);
+          Assert.AreEqual("NORTH",GameController.DIRECTION.NORTH);
                   
        }
     }

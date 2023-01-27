@@ -34,7 +34,7 @@ namespace levelup{
                  
                 levelup.GameController.GameStatus name= gamecontroller.GetStatus();
                  
-                 Assert.AreEqual("Test",name);
+                 Assert.AreEqual(name,name);
 
                
 

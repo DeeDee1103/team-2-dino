@@ -1,7 +1,9 @@
 using levelup;
+using NUnit.Framework;
 
+namespace LevelUpGame.Test{
 
-namespace levelup.test{
+  [TestFixture]
     public class CharacterTest{
 
             private Character testCharacter;

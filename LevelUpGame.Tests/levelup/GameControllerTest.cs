@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using levelup;
+using System;
 
 namespace levelup
 {
@@ -21,6 +22,10 @@ namespace levelup
             Assert.IsNotNull(testObj.GetStatus());
         }
         [Test]
-        public void getMove({})
+        public void getMove()
+        {
+            GameController gc = new GameController();
+                  
+       }
     }
 }

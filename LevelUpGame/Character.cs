@@ -1,7 +1,7 @@
 namespace levelup
 {
      public class Character{
-          public static string DEFAULT_NAME { get; set; }
+          public static string DEFAULT_NAME = "Character";
           public string NAME { get; set; }
 
           public Character(){

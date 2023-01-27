@@ -2,12 +2,14 @@ using levelup;
 using NUnit.Framework;
 using System;
 
+
 namespace levelup{
 
   [TestFixture]
     public class CharacterTest{
 
             private Character? _testCharacter;
+
 
           // Default character Test
           [Test]
@@ -24,5 +26,22 @@ namespace levelup{
               _testCharacter = new Character("Sam");
               Assert.AreEqual(_testCharacter.NAME, _testCharacter.NAME);
             }
+
+            [Test]
+            public void getName()
+            {
+                GameController gamecontroller = new GameController();
+                 
+                levelup.GameController.GameStatus name= gamecontroller.GetStatus();
+                 
+                 Assert.AreEqual("Test",name);
+
+               
+
+
+            }
+
+            
     }
 }
+

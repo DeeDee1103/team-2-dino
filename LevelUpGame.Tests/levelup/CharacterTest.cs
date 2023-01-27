@@ -23,8 +23,6 @@ namespace levelup{
             {
               _testCharacter = new Character("Sam");
               Assert.AreEqual(_testCharacter.NAME, _testCharacter.NAME);
-
-
             }
     }
 }

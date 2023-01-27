@@ -1,0 +1,11 @@
+using System.Drawing; 
+
+namespace levelup
+{
+    public class GameMap
+    {
+        public Position[][] positions;
+        public Position startingPosition = 0,0;
+        public int numPositions = 100;
+    }
+}

@@ -8,6 +8,12 @@ namespace levelup
         // low representational gap
         public readonly string DEFAULT_CHARACTER_NAME = "Character";
 
+        public const int SizeX = 10;
+        public const int SizeY = 10;
+
+
+
+
         public record struct GameStatus(
             // TODO: Add other status data
             String characterName,
@@ -48,6 +54,8 @@ namespace levelup
             // TODO: Implement startGame - Should probably create tiles and put the character
             // on them?
             // TODO: Should also update the game status?
+            Draw();
+
         }
 
         public GameStatus GetStatus()
@@ -59,6 +67,7 @@ namespace levelup
         {
             //TODO: Implement move - should call something on another class
             //TODO: Should probably also update the game status
+            
         }
 
         public void SetCharacterPosition(Point coordinates){
@@ -66,7 +75,21 @@ namespace levelup
         }
 
 
+   public static void Draw()
+        {
+            for (int y = SizeY -1; y >= 0; y--)
+            {
+                for(int x =0; x <SizeX; x++)
+                {
+                    Console.Write(" # ");
 
+                }
+
+                Console.Write('\n');
+            }
+
+
+        }
 
     }
 }
